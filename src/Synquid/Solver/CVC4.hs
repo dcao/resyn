@@ -203,7 +203,7 @@ sexp :: Pretty a => Doc -> [a] -> Doc
 sexp f args = parens $ f <+> hsep (map pretty args)
 
 cvc4 :: [String]
-cvc4 = ["/home/david/dl/cvc4-2020-06-15-x86_64-linux-opt"]
+cvc4 = ["cvc4"]
 
 flags :: [String]
 flags = ["--lang=sygus2", "--sygus-si=all", "--cegqi", "--cegqi-prereg-inst"]
